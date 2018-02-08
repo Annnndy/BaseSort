@@ -51,7 +51,7 @@ void selectionSort(T *arr, int n)
 
 ## Bubble Sort 冒泡排序
 
-```
+```cpp
 template <typename T>
 void bubbleSort(T *arr, n)
 {
@@ -74,6 +74,7 @@ void bubbleSort(T *arr, n)
 }
 ```
 
+```cpp
 ## Insertion Sort 插入排序
 template <typename T>
 void insertionSort(T *arr, int n)
@@ -90,7 +91,8 @@ void insertionSort(T *arr, int n)
      */
 
     //优化厚的方法，避免了多次交换
-    //总结起来就是，从i开始比，和上邻居比，比上邻居小，上邻居右移一位，继续，比邻上邻居大或到左边尽头，跳出，当前位置插入这个元素
+    //总结起来就是，从i开始比，和上邻居比，比上邻居小，
+    //上邻居右移一位，继续，比邻上邻居大或到左边尽头，跳出，当前位置插入这个元素
     for(int i = 1; i < n; i++)
     {
         T e = arr[i];
@@ -101,3 +103,4 @@ void insertionSort(T *arr, int n)
     }
 
 }
+```
